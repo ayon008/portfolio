@@ -111,6 +111,11 @@
 }
 
 
+.review-items {
+    height: 550px !important;
+}
+
+
 [role="dialog"]>button {
     @apply !text-white
 }
@@ -122,5 +127,11 @@
 
     body {
         @apply bg-background text-foreground;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .review-items {
+        height: 350px !important;
     }
 }
