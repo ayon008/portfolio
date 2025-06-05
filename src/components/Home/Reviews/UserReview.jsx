@@ -125,18 +125,18 @@ const ReviewSwiper = () => {
                         <MobileSlide image={cs5} name={<>Angela Ramirez</>} title={<>Sales Director</>} review={<>Reliable appointments every week—no fluff, just results.</>} />
                     </SwiperSlide>
                 </Swiper>
-                <div className='absolute z-50 left-1/2 -translate-x-1/2 bottom-0 flex items-center gap-2'>
+                <div className='absolute z-50 left-1/2 -translate-x-1/2 md:bottom-0 -bottom-5 flex items-center gap-2'>
                     <Button
                         onClick={() => swiperRef.current?.swiper.slidePrev()}
                         variant="outline"
-                        className="bg-transparent text-[#798792] border-[#3A3C48] p-4 rounded-full w-20 h-20 flex items-center justify-center"
+                        className="bg-transparent text-[#798792] border-[#3A3C48] p-4 rounded-full 2xl:w-20 2xl:h-20 xl:w-20 xl:h-20 w-14 h-14 flex items-center justify-center"
                     >
                         <ChevronsLeft className="w-6 h-6" />
                     </Button>
                     <Button
                         onClick={() => swiperRef.current?.swiper.slideNext()}
                         variant="outline"
-                        className="bg-transparent text-[#798792] border-[#3A3C48] p-4 rounded-full w-20 h-20 flex items-center justify-center"
+                        className="bg-transparent text-[#798792] border-[#3A3C48] p-4 rounded-full 2xl:w-20 2xl:h-20 xl:w-20 xl:h-20 w-14 h-14 flex items-center justify-center"
                     >
                         <ChevronsRight className="w-6 h-6" />
                     </Button>
