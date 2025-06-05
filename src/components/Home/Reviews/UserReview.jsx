@@ -81,7 +81,7 @@ const ReviewSwiper = () => {
 
     return (
         <div className='flex flex-col h-full relative'>
-            <div className='max-w-[1150px] mx-auto'>
+            <div className='2xl:max-w-[1150px] xl:max-w-[1150px] 2xl:mx-auto xl:mx-auto'>
                 <Swiper
                     ref={swiperRef}
                     pagination={{
