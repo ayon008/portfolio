@@ -105,10 +105,9 @@ const ReviewSwiper = () => {
                         modules={[Pagination]}
                         onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
                         className="mySwiper review-items">
-
                         <SwiperSlide className="2xl:!w-[570px] xl:!w-[570px] !w-full !h-[290px]">
-                            <BigSlide image={cs1} name={<>Jane Smith</>} title={<>Manager</>} review={<>I just want to share a good quick note and let you know that you guys do a really good job</>} />
-                            <MobileSlide image={cs1} name={<>Jane Smith</>} title={<>Manager</>} review={<>I just want to share a good quick note and let you know that you guys do a really good job</>} />
+                            <BigSlide image={cs1} name={<>Jane Smith</>} title={<>Manager</>} review={<>Paul, the custom WordPress site you built for my portfolio looks so professional. Clients actually compliment it — that never happened before. Thanks again!</>} />
+                            <MobileSlide image={cs1} name={<>Jane Smith</>} title={<>Manager</>} review={<>Paul, the custom WordPress site you built for my portfolio looks so professional. Clients actually compliment it — that never happened before. Thanks again!</>} />
                         </SwiperSlide>
                         <SwiperSlide className="2xl:!w-[270px] xl:!w-[270px] !w-full !h-[290px]">
                             <SmallSlide image={cs4} name={<>Albert M. Doyle</>} title={<>CEO</>} review={<>You made it so simple.My new site is so much faster and easier work to with than my old.</>} />
@@ -127,7 +126,7 @@ const ReviewSwiper = () => {
                             <MobileSlide image={cs5} name={<>Angela Ramirez</>} title={<>Sales Director</>} review={<>Reliable appointments every week—no fluff, just results.</>} />
                         </SwiperSlide>
                     </Swiper>
-                    <div className='absolute z-50 left-1/2 -translate-x-1/2 md:bottom-0 -bottom-5 flex items-center gap-2'>
+                    <div className='absolute z-40 left-1/2 -translate-x-1/2 md:bottom-0 -bottom-5 flex items-center gap-2'>
                         <Button
                             onClick={() => swiperRef.current?.swiper.slidePrev()}
                             variant="outline"

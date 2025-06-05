@@ -1,4 +1,5 @@
 import Banner from "@/components/Home/Banner";
+import Contact from "@/components/Home/Contact";
 import Counts from "@/components/Home/Counts";
 import Projects from "@/components/Home/Projects";
 import ReviewSwiper from "@/components/Home/Reviews/UserReview";
@@ -14,7 +15,6 @@ export default function Home() {
       <Skill />
       <Counts />
       <Projects />
-      {/* <UserReviewWrapper /> */}
       <div className="bg-[#282A37] py-32">
         <div className="mb-10 py-6 px-3 max-w-[1180px] mx-auto">
           <Title subheader={'Client Reviews'}
@@ -22,6 +22,9 @@ export default function Home() {
           />
         </div>
         <ReviewSwiper />
+      </div>
+      <div>
+        <Contact />
       </div>
     </div>
   );
