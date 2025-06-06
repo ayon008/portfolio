@@ -1,6 +1,7 @@
 import Banner from "@/components/Home/Banner";
 import Contact from "@/components/Home/Contact";
 import Counts from "@/components/Home/Counts";
+import Follow from "@/components/Home/Follow";
 import Projects from "@/components/Home/Projects";
 import ReviewSwiper from "@/components/Home/Reviews/UserReview";
 import Skill from "@/components/Home/Skill";
@@ -26,6 +27,7 @@ export default function Home() {
       <div>
         <Contact />
       </div>
+      <Follow />
     </div>
   );
 }
