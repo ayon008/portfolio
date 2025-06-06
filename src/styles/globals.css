@@ -116,6 +116,11 @@
 }
 
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 [role="dialog"]>button {
     @apply !text-white
 }

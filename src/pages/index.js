@@ -19,7 +19,7 @@ export default function Home() {
       <Skill />
       <Counts />
       <Projects />
-      <div className="bg-[#282A37] py-32">
+      <div className="bg-[#282A37] py-32" id="reviews">
         <div className="mb-10 py-6 px-3 max-w-[1180px] mx-auto">
           <Title subheader={'Client Reviews'}
             header={'What clients says about my work'}

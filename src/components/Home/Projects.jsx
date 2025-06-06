@@ -6,7 +6,7 @@ import { ChevronsLeft, ChevronsRight } from 'lucide-react';
 
 const Projects = () => {
     return (
-        <div className='py-28 px-6 relative max-w-[1280px] mx-auto'>
+        <div className='py-28 px-6 relative max-w-[1280px] mx-auto' id='projects'>
             <Title subheader={'Awesome Portfolio'}
                 header={'My Complete Projects'}
             />

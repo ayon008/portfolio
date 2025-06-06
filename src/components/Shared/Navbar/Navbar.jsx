@@ -6,14 +6,10 @@ import { ChevronsRight, Menu } from "lucide-react";
 import montserrat from '@/components/fonts/Monserrat';
 import {
     Sheet,
-    SheetClose,
     SheetContent,
-    SheetDescription,
-    SheetFooter,
-    SheetHeader,
-    SheetTitle,
     SheetTrigger,
 } from "@/components/ui/sheet"
+import { playfair } from '@/components/fonts/Disney';
 
 const text = `< Shariar Ayon />`
 export const Logo = () => {
@@ -33,16 +29,16 @@ const Navbar = () => {
                     <Logo />
                 </div>
                 <div className={`2xl:flex xl:flex hidden items-center gap-10 ${montserrat.className}`}>
-                    <Link className='text-base font-medium text-[#798792] hover:text-white transition-all duration-300' href={''}>Home</Link>
-                    <Link className='text-base font-medium text-[#798792] hover:text-white transition-all duration-300' href={''}>Service</Link>
-                    <Link className='text-base font-medium text-[#798792] hover:text-white transition-all duration-300' href={''}>Contact</Link>
-                    <Link className='text-base font-medium text-[#798792] hover:text-white transition-all duration-300' href={''}>Projects</Link>
-                    <Link className='text-base font-medium text-[#798792] hover:text-white transition-all duration-300' href={''}>Reviews</Link>
+                    <Link className='text-base font-medium text-[#798792] hover:text-white transition-all duration-300' href={'/'}>Home</Link>
+                    <Link className='text-base font-medium text-[#798792] hover:text-white transition-all duration-300' href={'#service'}>Service</Link>
+                    <Link className='text-base font-medium text-[#798792] hover:text-white transition-all duration-300' href={'#projects'}>Projects</Link>
+                    <Link className='text-base font-medium text-[#798792] hover:text-white transition-all duration-300' href={'#reviews'}>Reviews</Link>
+                    <Link className='text-base font-medium text-[#798792] hover:text-white transition-all duration-300' href={'#contact'}>Contact</Link>
                 </div>
                 <div className='2xl:block xl:block hidden'>
                     <Button className="border border-[#3A3C48] bg-[#252734] hover:bg-[#2A2C39] transition-all duration-300 hover:border-[#2A2C39] py-7 rounded-4xl text-lg cursor-pointer">
                         <span className='flex items-center gap-2 px-6'>
-                            <span>Hire me</span>
+                            <Link href={'#hire-me'} className={`${playfair.className}`}>Hire me</Link>
                             <ChevronsRight className="w-5 h-5 mt-1" />
                         </span>
                     </Button>

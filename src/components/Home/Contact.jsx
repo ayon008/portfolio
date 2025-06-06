@@ -16,7 +16,7 @@ const CDiv = ({ text, value }) => {
 
 const Contact = () => {
     return (
-        <div className='max-w-[1280px] mx-auto px-6 py-20 gap-20 flex 2xl:flex-row xl:flex-row flex-col items-start'>
+        <div className='max-w-[1280px] mx-auto px-6 py-20 gap-20 flex 2xl:flex-row xl:flex-row flex-col items-start' id='hire-me'>
             <div className='flex flex-col gap-10 2xl:w-[30%] xl:w-[30%]'>
                 <CDiv text={'Phone:'} value={'+880-1726-108060'} />
                 <CDiv text={'Email'} value={'shariar.ayon128@gmail.com'} />

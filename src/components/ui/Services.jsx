@@ -7,7 +7,7 @@ import UpAnimation from '../Shared/Animations/UpAniamtiton';
 
 const Services = () => {
     return (
-        <div className="bg-[#2A2C39]">
+        <div className="bg-[#2A2C39]" id='service'>
             <UpAnimation>
                 <div className="max-w-[1280px] mx-auto px-6 py-20">
                     <Title
