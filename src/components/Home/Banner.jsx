@@ -8,7 +8,6 @@ import { FaLinkedinIn } from "@react-icons/all-files/fa/FaLinkedinIn";
 import { FaWhatsapp } from '@react-icons/all-files/fa/FaWhatsapp';
 import { Download, Mail } from 'lucide-react';
 import { playfair } from '../fonts/Disney';
-import Link from 'next/link';
 
 const Banner = () => {
     return (
@@ -19,12 +18,14 @@ const Banner = () => {
                         <span className={`${playfair.className} text-7xl`}>Shariar Ayon</span>
                     </h1>
                     <p className={`text-[#798792] ${montserrat.className} mt-4 text-xl`}>Fullstack Developer and WordPress Specialist, building dynamic and  scalable web solutions.</p>
-                    <Button className="border border-[#3A3C48] bg-[#252734] hover:bg-[#2A2C39] transition-all duration-300 hover:border-[#2A2C39] py-7 rounded-4xl text-lg cursor-pointer mt-10">
-                        <span className='flex items-center gap-2 px-6'>
-                            <span className={`${playfair.className}`}>Get Resume</span>
-                            <Download className="w-5 h-5 mt-1" />
-                        </span>
-                    </Button>
+                    <a href='/Shariar_Ayon_CV.pdf' target="_blank" rel="noopener noreferrer">
+                        <Button className="border border-[#3A3C48] bg-[#252734] hover:bg-[#2A2C39] transition-all duration-300 hover:border-[#2A2C39] py-7 rounded-4xl text-lg cursor-pointer mt-10">
+                            <span className='flex items-center gap-2 px-6'>
+                                <span className={`${playfair.className}`}>Get Resume</span>
+                                <Download className="w-5 h-5 mt-1" />
+                            </span>
+                        </Button>
+                    </a>
                 </div>
                 <div className="2xl:w-1/2 xl:w-1/2 w-full relative z-40">
 
@@ -87,13 +88,11 @@ const Banner = () => {
                         <div className="absolute -bottom-6 left-6 right-16 bg-[#2A2C39] rounded-lg shadow-xl p-6 z-40">
                             <h2 className={`text-xl text-white mb-2 ${montserrat.className}`}>Shariar Ayon</h2>
                             <p className={`text-white text-sm mb-4 ${montserrat.className}`}>Full stack and wordpress developer with 3+ experience</p>
-                            <a href="/Shariar_Ayon_CV.pdf" download>
-                                <div className="flex space-x-3">
-                                    <button className={`border border-gray-300 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-50 hover:text-[#798792] transition-colors ${playfair.className}`}>
-                                        Hire Me
-                                    </button>
-                                </div>
-                            </a>
+                            <div className="flex space-x-3">
+                                <button className={`border border-gray-300 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-50 hover:text-[#798792] transition-colors ${playfair.className}`}>
+                                    Hire Me
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
