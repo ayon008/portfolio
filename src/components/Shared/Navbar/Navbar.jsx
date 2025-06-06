@@ -24,7 +24,7 @@ export const Logo = () => {
 const Navbar = () => {
     return (
         <div className='bg-[#252734] sticky top-0 z-50 '>
-            <div className='text-white flex items-center justify-between max-w-[1280px] mx-auto  p-6'>
+            <div className='text-white flex items-center justify-between max-w-[1280px] mx-auto p-6'>
                 <div>
                     <Logo />
                 </div>
@@ -50,24 +50,24 @@ const Navbar = () => {
                         </SheetTrigger>
                         <SheetContent className={'bg-[#252734]'}>
                             <div className='pt-20 flex flex-col px-10'>
-                                <Link className='text-xl py-4 font-medium text-[#798792] flex items-center justify-between' href={''}>
+                                <Link href={'/'} className='text-xl py-4 font-medium text-[#798792] flex items-center justify-between'>
                                     <span>Home</span>
                                     <ChevronsRight />
                                 </Link>
-                                <Link className='text-xl py-4 font-medium text-[#798792] flex items-center justify-between' href={'/service'}>
+                                <Link className='text-xl py-4 font-medium text-[#798792] flex items-center justify-between' href={'#service'}>
                                     <span>Service</span>
                                     <ChevronsRight />
                                 </Link>
-                                <Link className='text-xl py-4 font-medium text-[#798792] flex items-center justify-between' href={''}>
-                                    <span>Contact</span>
-                                    <ChevronsRight />
-                                </Link>
-                                <Link className='text-xl py-4 font-medium text-[#798792] flex items-center justify-between' href={''}>
+                                <Link className='text-xl py-4 font-medium text-[#798792] flex items-center justify-between' href={'#projects'}>
                                     <span>Projects</span>
                                     <ChevronsRight />
                                 </Link>
-                                <Link className='text-xl py-4 font-medium text-[#798792] flex items-center justify-between' href={''}>
+                                <Link className='text-xl py-4 font-medium text-[#798792] flex items-center justify-between' href={'#reviews'}>
                                     <span>Reviews</span>
+                                    <ChevronsRight />
+                                </Link>
+                                <Link className='text-xl py-4 font-medium text-[#798792] flex items-center justify-between' href={'#contact'}>
+                                    <span>Contact</span>
                                     <ChevronsRight />
                                 </Link>
                             </div>

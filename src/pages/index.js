@@ -15,7 +15,7 @@ export default function Home() {
       <UpAnimation>
         <Banner />
       </UpAnimation>
-      <Services />
+      {/* <Services />
       <Skill />
       <Counts />
       <Projects />
@@ -30,7 +30,7 @@ export default function Home() {
       <UpAnimation>
         <Contact />
       </UpAnimation>
-      <Follow />
+      <Follow /> */}
     </div>
   );
 }

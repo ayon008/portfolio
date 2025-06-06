@@ -6,8 +6,8 @@ const Main = ({ children }) => {
         <div className='bg-[#252734] relative'>
             <div className=''>
                 <Navbar />
-                {children}
-                <Footer />
+                {/* {children} */}
+                {/* <Footer /> */}
             </div>
         </div>
     );
