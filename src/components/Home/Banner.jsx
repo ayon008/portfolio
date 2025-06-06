@@ -1,14 +1,13 @@
 import React from 'react';
 import montserrat from '../fonts/Monserrat';
 import Image from 'next/image';
-import shariar from '../../../public/New Project.png'
+import shariar from '@/../public/New Project.png'
 import { Button } from '../ui/button';
 import { FaFacebookF } from "@react-icons/all-files/fa/FaFacebookF";
 import { FaLinkedinIn } from "@react-icons/all-files/fa/FaLinkedinIn";
 import { FaWhatsapp } from '@react-icons/all-files/fa/FaWhatsapp';
 import { Download, Mail } from 'lucide-react';
 import { playfair } from '../fonts/Disney';
-
 const Banner = () => {
     return (
         <div className='relative w-full'>
@@ -52,36 +51,43 @@ const Banner = () => {
                                 fill="none"
                             />
                         </svg>
-
                         {/* Navigation Icons */}
-                        <div className="absolute top-0 right-0 w-64 h-full">
+                        <div className="absolute top-0 right-0 w-64 h-full z-40">
                             {/* Facebook Icon */}
-                            <div className="absolute top-28 right-40 transform translate-x-4">
-                                <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-shadow cursor-pointer group">
-                                    <FaFacebookF className="w-5 h-5 text-blue-600 group-hover:scale-110 transition-transform" />
+                            <a href="https://www.facebook.com/shariar.oyon/" target="_blank" rel="noopener noreferrer">
+                                <div className="absolute top-28 right-40 transform translate-x-4">
+                                    <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-shadow cursor-pointer group">
+                                        <FaFacebookF className="w-5 h-5 text-blue-600 group-hover:scale-110 transition-transform" />
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
 
                             {/* Settings Icon */}
-                            <div className="absolute top-48 right-24 transform translate-x-8">
-                                <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-shadow cursor-pointer group">
-                                    <FaLinkedinIn className="w-5 h-5 text-gray-600 group-hover:scale-110 transition-transform group-hover:rotate-90" />
+                            <a href='www.linkedin.com/in/shariar-ayon-0601a7193' target="_blank" rel="noopener noreferrer">
+                                <div className="absolute top-48 right-24 transform translate-x-8">
+                                    <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-shadow cursor-pointer group">
+                                        <FaLinkedinIn className="w-5 h-5 text-gray-600 group-hover:scale-110 transition-transform group-hover:rotate-90" />
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
 
                             {/* Mail Icon */}
-                            <div className="absolute top-72 right-[70px] transform translate-x-8">
-                                <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-shadow cursor-pointer group">
-                                    <Mail className="w-5 h-5 text-red-500 group-hover:scale-110 transition-transform" />
+                            <a href="mailto:shariar.ayon128@gmail.com">
+                                <div className="absolute top-72 right-[70px] transform translate-x-8">
+                                    <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-shadow cursor-pointer group">
+                                        <Mail className="w-5 h-5 text-red-500 group-hover:scale-110 transition-transform" />
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
 
                             {/* LinkedIn Icon */}
-                            <div className="absolute top-[400px] right-20 transform translate-x-4">
-                                <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-shadow cursor-pointer group">
-                                    <FaWhatsapp className="w-5 h-5 text-blue-700 group-hover:scale-110 transition-transform" />
+                            <a href="https://wa.me/8801726108060" target="_blank" rel="noopener noreferrer">
+                                <div className="absolute top-[400px] right-20 transform translate-x-4">
+                                    <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-shadow cursor-pointer group">
+                                        <FaWhatsapp className="w-5 h-5 text-blue-700 group-hover:scale-110 transition-transform" />
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
 
                         {/* Profile Info Card */}
@@ -89,9 +95,11 @@ const Banner = () => {
                             <h2 className={`text-xl text-white mb-2 ${montserrat.className}`}>Shariar Ayon</h2>
                             <p className={`text-white text-sm mb-4 ${montserrat.className}`}>Full stack and wordpress developer with 3+ experience</p>
                             <div className="flex space-x-3">
-                                <button className={`border border-gray-300 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-50 hover:text-[#798792] transition-colors ${playfair.className}`}>
-                                    Hire Me
-                                </button>
+                                <Button className="border border-[#3A3C48] bg-[#252734] hover:bg-[#2A2C39] transition-all duration-300 hover:border-[#2A2C39] p-3 rounded-4xl text-sm cursor-pointer">
+                                    <span className='flex items-center gap-2 px-6'>
+                                        <span className={`${playfair.className}`}>Hire Me</span>
+                                    </span>
+                                </Button>
                             </div>
                         </div>
                     </div>
