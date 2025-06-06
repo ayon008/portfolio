@@ -8,12 +8,12 @@ import UpAnimation from '../Shared/Animations/UpAniamtiton';
 const Services = () => {
     return (
         <div className="bg-[#2A2C39]">
-            <div className="max-w-[1280px] mx-auto px-6 py-20">
-                <Title
-                    subheader={'My Services'}
-                    header={'Service Provide For My Clients.'}
-                />
-                <UpAnimation>
+            <UpAnimation>
+                <div className="max-w-[1280px] mx-auto px-6 py-20">
+                    <Title
+                        subheader={'My Services'}
+                        header={'Service Provide For My Clients.'}
+                    />
                     <div className="grid 2xl:grid-cols-3 xl:grid-cols-3 grid-cols-1 gap-12 mt-16">
                         <div className="bg-[#252734] p-16">
                             <Image src={development} alt="'development" />
@@ -138,8 +138,8 @@ const Services = () => {
                             </div>
                         </div>
                     </div>
-                </UpAnimation>
-            </div>
+                </div>
+            </UpAnimation>
         </div>
     );
 };
