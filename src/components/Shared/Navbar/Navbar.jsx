@@ -49,7 +49,7 @@ const Navbar = () => {
                             <Menu />
                         </SheetTrigger>
                         <SheetContent className={'bg-[#252734]'}>
-                            <div className='pt-20 flex flex-col px-10'>
+                            <div className={`pt-20 flex flex-col px-10 ${montserrat.className}`}>
                                 <Link href={'/'} className='text-xl py-4 font-medium text-[#798792] flex items-center justify-between'>
                                     <span>Home</span>
                                     <ChevronsRight />

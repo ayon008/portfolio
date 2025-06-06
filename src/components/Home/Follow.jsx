@@ -11,18 +11,20 @@ const Follow = () => {
             <div className='py-28 px-6 max-w-[1280px] mx-auto'>
                 <Title subheader={'Follow Me'} header={'Follow me on social media'} />
                 <div className='mt-16 flex items-center 2xl:flex-row xl:flex-row flex-col justify-between gap-6'>
-                    <div className='flex md:flex-row flex-col items-center gap-6'>
+                    <a href="tel:+8801726108060" className='flex md:flex-row flex-col items-center gap-6'>
                         <div className='w-20 h-20 flex items-center justify-center p-4 rounded-full border border-[#3A3C48] text-white hover:text-black bg-transparent hover:bg-white transition-all duration-300 ease-in'>
                             <Phone className='w-6 h-6' />
                         </div>
                         <p className='text-white md:text-3xl text-xl'>+880-1726-108060</p>
-                    </div>
-                    <div className='flex md:flex-row flex-col items-center gap-6'>
+                    </a>
+
+                    <a href="mailto:shariar.ayon128@gmail.com" className='flex md:flex-row flex-col items-center gap-6'>
                         <div className='w-20 h-20 flex items-center justify-center p-4 rounded-full border border-[#3A3C48] text-white hover:text-black bg-transparent hover:bg-white transition-all duration-300 ease-in'>
                             <Mail className='w-6 h-6' />
                         </div>
-                        <p className='text-white dm:text-3xl text-xl'>shariar.ayon128@gmail.com</p>
-                    </div>
+                        <p className='text-white md:text-3xl text-xl'>shariar.ayon128@gmail.com</p>
+                    </a>
+
                 </div>
                 <div className='flex items-center justify-center gap-x-10 mt-20'>
                     <div>
