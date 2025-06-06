@@ -15,10 +15,12 @@ export default function Home() {
       <UpAnimation>
         <Banner />
       </UpAnimation>
-      {/* <Services />
+      <Services />
       <Skill />
       <Counts />
-      <Projects />
+      <div className="md:pb-0 pb-20">
+        <Projects />
+      </div>
       <div className="bg-[#282A37] py-32" id="reviews">
         <div className="mb-10 py-6 px-3 max-w-[1180px] mx-auto">
           <Title subheader={'Client Reviews'}
@@ -30,7 +32,7 @@ export default function Home() {
       <UpAnimation>
         <Contact />
       </UpAnimation>
-      <Follow /> */}
+      <Follow />
     </div>
   );
 }

@@ -82,7 +82,7 @@ const ReviewSwiper = () => {
 
     return (
         <UpAnimation>
-            <div className='flex flex-col h-full relative'>
+            <div className='flex flex-col h-full relative w-full'>
                 <div className='2xl:max-w-[1150px] xl:max-w-[1150px] 2xl:mx-auto xl:mx-auto'>
                     <Swiper
                         ref={swiperRef}
@@ -106,24 +106,78 @@ const ReviewSwiper = () => {
                         onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
                         className="mySwiper review-items">
                         <SwiperSlide className="2xl:!w-[570px] xl:!w-[570px] !w-full !h-[290px]">
-                            <BigSlide image={cs1} name={<>Jane Smith</>} title={<>Manager</>} review={<>Paul, the custom WordPress site you built for my portfolio looks so professional. Clients actually compliment it — that never happened before. Thanks again!</>} />
-                            <MobileSlide image={cs1} name={<>Jane Smith</>} title={<>Manager</>} review={<>Paul, the custom WordPress site you built for my portfolio looks so professional. Clients actually compliment it — that never happened before. Thanks again!</>} />
+                            <BigSlide
+                                image={cs1}
+                                name={<>Jane Smith</>}
+                                title={<>Manager</>}
+                                review={<>The full stack dashboard you built is clean, fast, and super easy to manage. Love it!</>}
+                            />
+                            <MobileSlide
+                                image={cs1}
+                                name={<>Jane Smith</>}
+                                title={<>Manager</>}
+                                review={<>The full stack dashboard you built is clean, fast, and super easy to manage. Love it!</>}
+                            />
                         </SwiperSlide>
+
                         <SwiperSlide className="2xl:!w-[270px] xl:!w-[270px] !w-full !h-[290px]">
-                            <SmallSlide image={cs4} name={<>Albert M. Doyle</>} title={<>CEO</>} review={<>You made it so simple.My new site is so much faster and easier work to with than my old.</>} />
-                            <MobileSlide image={cs2} name={<>Albert M. Doyle</>} title={<>CEO</>} review={<>You made it so simple.My new site is so much faster and easier work to with than my old.</>} />
+                            <SmallSlide
+                                image={cs4}
+                                name={<>Albert M. Doyle</>}
+                                title={<>CEO</>}
+                                review={<>Our WordPress site finally looks premium. You nailed it!</>}
+                            />
+                            <MobileSlide
+                                image={cs2}
+                                name={<>Albert M. Doyle</>}
+                                title={<>CEO</>}
+                                review={<>Our WordPress site finally looks premium. You nailed it!</>}
+                            />
                         </SwiperSlide>
+
                         <SwiperSlide className="2xl:!w-[270px] xl:!w-[270px] !w-full !h-[290px]">
-                            <SmallSlide image={cs2} name={<>Jacob B. Ginley</>} title={<>Manager</>} review={<>High-quality janitorial leads that actually convert—saved us tons of time.</>} />
-                            <MobileSlide image={cs3} name={<>Jacob B. Ginley</>} title={<>Manager</>} review={<>High-quality janitorial leads that actually convert—saved us tons of time.</>} />
+                            <SmallSlide
+                                image={cs2}
+                                name={<>Jacob B. Ginley</>}
+                                title={<>Manager</>}
+                                review={<>The custom API integration saved us hours every week. Great job!</>}
+                            />
+                            <MobileSlide
+                                image={cs3}
+                                name={<>Jacob B. Ginley</>}
+                                title={<>Manager</>}
+                                review={<>The custom API integration saved us hours every week. Great job!</>}
+                            />
                         </SwiperSlide>
+
                         <SwiperSlide className="2xl:!w-[570px] xl:!w-[570px] !w-full !h-[290px]">
-                            <BigSlide image={cs3} name={<>Devon Carter</>} title={<>Cleaning Business Owner</>} review={<>Great service! We closed three deals in the first week.</>} />
-                            <MobileSlide image={cs4} name={<>Devon Carter</>} title={<>Cleaning Business Owner</>} review={<>Great service! We closed three deals in the first week.</>} />
+                            <BigSlide
+                                image={cs3}
+                                name={<>Devon Carter</>}
+                                title={<>Cleaning Business Owner</>}
+                                review={<>The site you built loads fast and brought in leads within days. Solid work!</>}
+                            />
+                            <MobileSlide
+                                image={cs4}
+                                name={<>Devon Carter</>}
+                                title={<>Cleaning Business Owner</>}
+                                review={<>The site you built loads fast and brought in leads within days. Solid work!</>}
+                            />
                         </SwiperSlide>
+
                         <SwiperSlide className="2xl:!w-[270px] xl:!w-[270px] !w-full !h-[290px]">
-                            <SmallSlide image={cs5} name={<>Angela Ramirez</>} title={<>Sales Director</>} review={<>Reliable appointments every week—no fluff, just results.</>} />
-                            <MobileSlide image={cs5} name={<>Angela Ramirez</>} title={<>Sales Director</>} review={<>Reliable appointments every week—no fluff, just results.</>} />
+                            <SmallSlide
+                                image={cs5}
+                                name={<>Angela Ramirez</>}
+                                title={<>Sales Director</>}
+                                review={<>Your full stack solution helped us scale without tech headaches.</>}
+                            />
+                            <MobileSlide
+                                image={cs5}
+                                name={<>Angela Ramirez</>}
+                                title={<>Sales Director</>}
+                                review={<>Your full stack solution helped us scale without tech headaches.</>}
+                            />
                         </SwiperSlide>
                     </Swiper>
                     <div className='absolute z-40 left-1/2 -translate-x-1/2 md:bottom-0 -bottom-5 flex items-center gap-2'>

@@ -21,7 +21,7 @@ const CounterItem = ({ img, end, text }) => {
     return (
         <motion.div
             ref={ref}
-            className='flex items-start justify-center gap-10'
+            className='flex md:items-start items-center md:flex-row flex-col justify-center gap-10'
             initial={{ opacity: 0, y: 70 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: 'easeOut' }}
@@ -31,10 +31,10 @@ const CounterItem = ({ img, end, text }) => {
                 <Image src={img} alt='' />
             </div>
             <div className='text-white'>
-                <h1 className='text-6xl'>
+                <h1 className='text-6xl w-fit mx-auto'>
                     {start && <CountUp end={end} duration={2} />}+
                 </h1>
-                <p className={`mt-6 text-[#798792] ${montserrat.className}`}>{text}</p>
+                <p className={`mt-6 text-[#798792] md:text-left text-center ${montserrat.className}`}>{text}</p>
             </div>
         </motion.div>
     );

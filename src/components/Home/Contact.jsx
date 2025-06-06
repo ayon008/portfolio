@@ -7,7 +7,7 @@ import { Button } from '../ui/button';
 
 const CDiv = ({ text, value }) => {
     return (
-        <div className=' bg-[#282A37] py-10 px-20'>
+        <div className=' bg-[#282A37] py-10 md:px-20 px-10'>
             <h1 className={`text-white w-fit ${montserrat.className}`}>{text}</h1>
             <p className={`mt-8 text-[#798792] w-fit ${montserrat.className}`}>{value}</p>
         </div>
@@ -17,7 +17,7 @@ const CDiv = ({ text, value }) => {
 const Contact = () => {
     return (
         <div className='max-w-[1280px] mx-auto px-6 py-20 gap-20 flex 2xl:flex-row xl:flex-row flex-col items-start' id='hire-me'>
-            <div className='flex flex-col gap-10 2xl:w-[30%] xl:w-[30%]'>
+            <div className='flex flex-col gap-10 2xl:w-[30%] xl:w-[30%] w-full'>
                 <CDiv text={'Phone:'} value={'+880-1726-108060'} />
                 <CDiv text={'Email'} value={'shariar.ayon128@gmail.com'} />
                 <CDiv text={'Website'} value={'https://portfolio-lake-five-93.vercel.app/'} />

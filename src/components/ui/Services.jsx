@@ -14,10 +14,10 @@ const Services = () => {
                         subheader={'My Services'}
                         header={'Service Provide For My Clients.'}
                     />
-                    <div className="grid 2xl:grid-cols-3 xl:grid-cols-3 grid-cols-1 gap-12 mt-16">
-                        <div className="bg-[#252734] p-16">
-                            <Image src={development} alt="'development" />
-                            <p className="uppercase text-white text-2xl font-semibold my-16 leading-10">full stack development</p>
+                    <div className="grid 2xl:grid-cols-3 xl:grid-cols-3 grid-cols-1 md:gap-12 gap-6 mt-16">
+                        <div className="bg-[#252734] md:p-16 p-8">
+                            <Image src={development} alt="development" className='md:w-auto md:h-auto w-[40px] h-[40px]' />
+                            <p className="uppercase text-white md:text-2xl text-xl font-semibold md:my-16 my-8 leading-10">full stack development</p>
                             <div className="space-y-4 text-[#798792]">
                                 <div className="flex items-center gap-2">
                                     <ChevronsRight className="w-5 h-5" />
@@ -57,9 +57,9 @@ const Services = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="bg-[#252734] p-16">
-                            <Image src={development} alt="development" />
-                            <p className="uppercase text-white text-2xl font-semibold my-16">WordPress Development</p>
+                        <div className="bg-[#252734] md:p-16 p-8">
+                            <Image src={development} alt="development" className='md:w-auto md:h-auto w-[40px] h-[40px]' />
+                            <p className="uppercase text-white md:text-2xl text-xl font-semibold md:my-16 my-8">WordPress Development</p>
                             <div className="space-y-4 text-[#798792]">
                                 <div className="flex items-center gap-2">
                                     <ChevronsRight className="w-5 h-5" />
@@ -99,9 +99,9 @@ const Services = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="bg-[#252734] p-16">
-                            <Image src={development} alt="development" />
-                            <p className="uppercase text-white text-2xl font-semibold my-16">API Development & Automation</p>
+                        <div className="bg-[#252734] md:p-16 p-8">
+                            <Image src={development} alt="development" className='md:w-auto md:h-auto w-[40px] h-[40px]' />
+                            <p className="uppercase text-white md:text-2xl text-xl font-semibold md:my-16 my-8">API Development & Automation</p>
                             <div className="space-y-4 text-[#798792]">
                                 <div className="flex items-center gap-2">
                                     <ChevronsRight className="w-5 h-5" />
