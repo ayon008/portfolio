@@ -4,6 +4,7 @@ import Title from '../Shared/Title/Title';
 import { Input } from '../ui/input';
 import { Textarea } from '../ui/textarea';
 import { Button } from '../ui/button';
+import Swal from 'sweetalert2';
 
 const CDiv = ({ text, value }) => {
     return (
@@ -24,18 +25,101 @@ const Contact = () => {
             </div>
             <div>
                 <Title header={'If you have any porject or need help. Contact me'} subheader={'If you have any porject or need help. Contact me'} />
-                <form className='space-y-8 mt-10'>
-                    <div className='flex items-center 2xl:flex-row xl:flex-row flex-col gap-6'>
-                        <Input type="name" className={'rounded-none border border-[#3A3C48] py-8 px-6'} placeholder="Name" />
-                        <Input type="email" className={'rounded-none border border-[#3A3C48] py-8 px-6'} placeholder="Email" />
+                <form
+                    onSubmit={async (e) => {
+                        e.preventDefault();
+                        const formData = new FormData(e.currentTarget);
+
+                        const data = {
+                            name: formData.get('name'),
+                            email: formData.get('email'),
+                            phone: formData.get('phone'),
+                            subject: formData.get('subject'),
+                            message: formData.get('message'),
+                        };
+
+                        // Show loading
+                        Swal.fire({
+                            title: 'Submitting...',
+                            allowOutsideClick: false,
+                            didOpen: () => {
+                                Swal.showLoading();
+                            },
+                        });
+
+                        try {
+                            const res = await fetch('/api/contact', {
+                                method: 'POST',
+                                headers: {
+                                    'Content-Type': 'application/json',
+                                },
+                                body: JSON.stringify(data),
+                            });
+
+                            const result = await res.json();
+
+                            if (res.ok) {
+                                Swal.fire({
+                                    icon: 'success',
+                                    title: 'Message Sent!',
+                                    text: result.message,
+                                });
+                                e.target.reset(); // Optionally reset the form
+                            } else {
+                                Swal.fire({
+                                    icon: 'error',
+                                    title: 'Oops...',
+                                    text: result.error || 'Something went wrong.',
+                                });
+                            }
+                        } catch (error) {
+                            Swal.fire({
+                                icon: 'error',
+                                title: 'Network Error',
+                                text: 'Could not submit the form. Please try again later.',
+                            });
+                        }
+                    }}
+                    className="space-y-8 mt-10"
+                >
+                    <div className="flex items-center 2xl:flex-row xl:flex-row flex-col gap-6">
+                        <Input
+                            type="text"
+                            name="name"
+                            className="rounded-none border border-[#3A3C48] py-8 px-6 text-lg text-white"
+                            placeholder="Name"
+                        />
+                        <Input
+                            type="email"
+                            name="email"
+                            className="text-white rounded-none border border-[#3A3C48] text-lg py-8 px-6"
+                            placeholder="Email"
+                        />
                     </div>
-                    <div className='flex items-center 2xl:flex-row xl:flex-row flex-col gap-6'>
-                        <Input type="phone" className={'rounded-none border border-[#3A3C48] py-8 px-6'} placeholder="Phone" />
-                        <Input type="text" className={'rounded-none border border-[#3A3C48] py-8 px-6'} placeholder="Subject" />
+                    <div className="flex items-center 2xl:flex-row xl:flex-row flex-col gap-6">
+                        <Input
+                            type="tel"
+                            name="phone"
+                            className="rounded-none border border-[#3A3C48] text-lg py-8 px-6 text-white"
+                            placeholder="Phone"
+                        />
+                        <Input
+                            type="text"
+                            name="subject"
+                            className="rounded-none border border-[#3A3C48] text-lg py-8 px-6 text-white"
+                            placeholder="Subject"
+                        />
                     </div>
-                    <Textarea className={'rounded-none border border-[#3A3C48] py-20 px-6'} placeholder="Type your message here." />
-                    <Button className="border border-[#3A3C48] bg-[#252734] hover:bg-[#2A2C39] transition-all duration-300 hover:border-[#2A2C39] py-7 rounded-4xl text-lg cursor-pointer">
-                        <span className='flex items-center gap-2 px-6'>
+                    <Textarea
+                        name="message"
+                        className="rounded-none border border-[#3A3C48] text-lg py-20 px-6 text-white"
+                        placeholder="Type your message here."
+                    />
+                    <Button
+                        type="submit"
+                        className="border border-[#3A3C48] bg-[#252734] hover:bg-[#2A2C39] transition-all duration-300 hover:border-[#2A2C39] py-7 rounded-4xl text-lg cursor-pointer"
+                    >
+                        <span className="flex items-center gap-2 px-6">
                             <span className={`${montserrat.className}`}>Submit Message</span>
                         </span>
                     </Button>
