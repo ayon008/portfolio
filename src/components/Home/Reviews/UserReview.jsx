@@ -103,6 +103,7 @@ const ReviewSwiper = () => {
                             }
                         }}
                         modules={[Pagination]}
+                        loop={true}
                         onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
                         className="mySwiper review-items">
                         <SwiperSlide className="2xl:!w-[570px] xl:!w-[570px] !w-full !h-[290px]">

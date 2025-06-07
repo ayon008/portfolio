@@ -31,7 +31,7 @@ const CounterItem = ({ img, end, text }) => {
                 <Image src={img} alt='' />
             </div>
             <div className='text-white'>
-                <h1 className='text-6xl w-fit mx-auto'>
+                <h1 className='text-6xl md:w-auto w-fit md:mx-0 mx-auto'>
                     {start && <CountUp end={end} duration={2} />}+
                 </h1>
                 <p className={`mt-6 text-[#798792] md:text-left text-center ${montserrat.className}`}>{text}</p>
