@@ -61,7 +61,7 @@ const Banner = () => {
                             </a>
 
                             {/* Settings Icon */}
-                            <a href='www.linkedin.com/in/shariar-ayon-0601a7193' target="_blank" rel="noopener noreferrer">
+                            <a href='https://www.linkedin.com/in/shariar-ayon-0601a7193' target="_blank" rel="noopener noreferrer">
                                 <div className="absolute top-48 right-24 transform translate-x-8">
                                     <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-shadow cursor-pointer group">
                                         <FaLinkedinIn className="w-5 h-5 text-gray-600 group-hover:scale-110 transition-transform group-hover:rotate-90" />

@@ -27,21 +27,21 @@ const Follow = () => {
 
                 </div>
                 <div className='flex items-center justify-center gap-x-10 mt-20'>
-                    <div>
+                    <a href='https://www.facebook.com/shariar.oyon/' target="_blank" rel="noopener noreferrer">
                         <div className='w-20 h-20 flex items-center justify-center p-4 rounded-full border border-[#3A3C48] text-white hover:text-black bg-transparent hover:bg-white transition-all duration-300 ease-in'>
                             <FaFacebookF className='w-6 h-6' />
                         </div>
-                    </div>
-                    <div>
+                    </a>
+                    <a href='https://www.linkedin.com/in/shariar-ayon-0601a7193' target="_blank" rel="noopener noreferrer">
                         <div className='w-20 h-20 flex items-center justify-center p-4 rounded-full border border-[#3A3C48] text-white hover:text-black bg-transparent hover:bg-white transition-all duration-300 ease-in'>
                             <FaLinkedinIn className='w-6 h-6' />
                         </div>
-                    </div>
-                    <div>
+                    </a>
+                    <a href="https://wa.me/8801726108060" target="_blank" rel="noopener noreferrer">
                         <div className='w-20 h-20 flex items-center justify-center p-4 rounded-full border border-[#3A3C48] text-white hover:text-black bg-transparent hover:bg-white transition-all duration-300 ease-in'>
                             <FaWhatsapp className='w-6 h-6' />
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
