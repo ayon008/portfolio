@@ -1,10 +1,13 @@
 'use client'
 import Image from 'next/image';
-import cs1 from '@/../public/testimonials_01.jpg'
-import cs2 from '@/../public/testimonial_03.jpg'
-import cs3 from '@/../public/testimonial_04.jpg'
-import cs4 from '@/../public/testimonial_05.jpg'
-import cs5 from '@/../public/testimonials_02.jpg'
+import people from '../../../../public/FireShot/New Project.jpg'
+import people_a from '../../../../public/FireShot/New Project (1).jpg'
+import people1 from '@/../public/Ellipse 146.png';
+import people2 from '@/../public/Ellipse 147.png';
+import people3 from '@/../public/Ellipse 148.png';
+import people4 from '@/../public/Ellipse 149.png';
+import people5 from '@/../public/Ellipse 150.png';
+import people6 from '@/../public/Ellipse 151.png';
 import { FaQuoteLeft } from '@react-icons/all-files/fa/FaQuoteLeft';
 import React, { useRef, useState } from 'react';
 // Import Swiper React components
@@ -108,14 +111,14 @@ const ReviewSwiper = () => {
                         className="mySwiper review-items">
                         <SwiperSlide className="2xl:!w-[570px] xl:!w-[570px] !w-full !h-[290px]">
                             <BigSlide
-                                image={cs1}
-                                name={<>Jane Smith</>}
+                                image={people_a}
+                                name={<>Rachel Bennett</>}
                                 title={<>Manager</>}
                                 review={<>The full stack dashboard you built is clean, fast, and super easy to manage. Love it!</>}
                             />
                             <MobileSlide
-                                image={cs1}
-                                name={<>Jane Smith</>}
+                                image={people_a}
+                                name={<>Rachel Bennett</>}
                                 title={<>Manager</>}
                                 review={<>The full stack dashboard you built is clean, fast, and super easy to manage. Love it!</>}
                             />
@@ -123,14 +126,14 @@ const ReviewSwiper = () => {
 
                         <SwiperSlide className="2xl:!w-[270px] xl:!w-[270px] !w-full !h-[290px]">
                             <SmallSlide
-                                image={cs4}
-                                name={<>Albert M. Doyle</>}
+                                image={people2}
+                                name={<>Carlos Ramirez</>}
                                 title={<>CEO</>}
                                 review={<>Our WordPress site finally looks premium. You nailed it!</>}
                             />
                             <MobileSlide
-                                image={cs2}
-                                name={<>Albert M. Doyle</>}
+                                image={people2}
+                                name={<>Carlos Ramirez</>}
                                 title={<>CEO</>}
                                 review={<>Our WordPress site finally looks premium. You nailed it!</>}
                             />
@@ -138,14 +141,14 @@ const ReviewSwiper = () => {
 
                         <SwiperSlide className="2xl:!w-[270px] xl:!w-[270px] !w-full !h-[290px]">
                             <SmallSlide
-                                image={cs2}
-                                name={<>Jacob B. Ginley</>}
+                                image={people3}
+                                name={<>Emily Walker</>}
                                 title={<>Manager</>}
                                 review={<>The custom API integration saved us hours every week. Great job!</>}
                             />
                             <MobileSlide
-                                image={cs3}
-                                name={<>Jacob B. Ginley</>}
+                                image={people3}
+                                name={<>Emily Walker</>}
                                 title={<>Manager</>}
                                 review={<>The custom API integration saved us hours every week. Great job!</>}
                             />
@@ -153,13 +156,13 @@ const ReviewSwiper = () => {
 
                         <SwiperSlide className="2xl:!w-[570px] xl:!w-[570px] !w-full !h-[290px]">
                             <BigSlide
-                                image={cs3}
+                                image={people}
                                 name={<>Devon Carter</>}
                                 title={<>Cleaning Business Owner</>}
                                 review={<>The site you built loads fast and brought in leads within days. Solid work!</>}
                             />
                             <MobileSlide
-                                image={cs4}
+                                image={people}
                                 name={<>Devon Carter</>}
                                 title={<>Cleaning Business Owner</>}
                                 review={<>The site you built loads fast and brought in leads within days. Solid work!</>}
@@ -168,13 +171,13 @@ const ReviewSwiper = () => {
 
                         <SwiperSlide className="2xl:!w-[270px] xl:!w-[270px] !w-full !h-[290px]">
                             <SmallSlide
-                                image={cs5}
+                                image={people6}
                                 name={<>Angela Ramirez</>}
                                 title={<>Sales Director</>}
                                 review={<>Your full stack solution helped us scale without tech headaches.</>}
                             />
                             <MobileSlide
-                                image={cs5}
+                                image={people6}
                                 name={<>Angela Ramirez</>}
                                 title={<>Sales Director</>}
                                 review={<>Your full stack solution helped us scale without tech headaches.</>}

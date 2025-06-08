@@ -35,23 +35,23 @@ const ProjectCard = ({
                 <div className='overflow-hidden flex items-center justify-center h-full project-image relative'>
                     <Image src={imageMain} alt={`${title} preview`} width={350} height={500} className='w-[350px] -rotate-45' />
                 </div>
-                <div className='overflow-hidden w-[450px] h-[380px] absolute bottom-0 left-1/2 -translate-x-1/2 opacity-100'>
+                <div className='overflow-hidden md:w-[450px] md:h-[380px] w-[250px] h-[415px] absolute bottom-0 left-1/2 -translate-x-1/2 opacity-100'>
                     <Image src={imageOverlay} alt={`${title} full`} width={450} height={380} className='w-full' />
                 </div>
             </div>
 
             {/* Text Section */}
-            <div className='md:w-1/2 w-full relative bg-[#2A2C39] h-[450px] p-10 text-[#798792] space-y-3'>
+            <div className='md:w-1/2 w-full relative bg-[#2A2C39] md:h-[450px] h-auto p-10 text-[#798792] space-y-3'>
                 <h2 className={`${playfair.className} text-xl text-white tracking-wider`}>
                     Project Name: {title}
                 </h2>
-                <p className={`${montserrat.className} text-base`}>
+                <p className={`${montserrat.className} text-base md:block hidden`}>
                     {description}
                 </p>
-                <h2 className={`${playfair.className} text-lg text-white tracking-wider`}>
+                <h2 className={`${playfair.className} text-lg text-white tracking-wider md:block hidden`}>
                     Technology Used:
                 </h2>
-                <div className='space-y-3 pl-4'>
+                <div className='space-y-3 pl-4 md:block hidden'>
                     {technologies.map((tech, index) => (
                         <div key={index} className='flex items-center gap-2'>
                             <ChevronsRight className='w-5 h-5' />

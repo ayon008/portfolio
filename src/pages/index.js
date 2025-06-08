@@ -18,9 +18,11 @@ export default function Home() {
       <Services />
       <Skill />
       <Counts />
-      <div className="md:pb-0 pb-20">
-        <Projects />
-      </div>
+      <UpAnimation>
+        <div className="md:pb-0 pb-20 overflow-hidden">
+          <Projects />
+        </div>
+      </UpAnimation>
       <div className="bg-[#282A37] py-32" id="reviews">
         <div className="mb-10 py-6 px-3 max-w-[1180px] mx-auto">
           <Title subheader={'Client Reviews'}
