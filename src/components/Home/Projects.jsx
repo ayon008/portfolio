@@ -33,10 +33,10 @@ const ProjectCard = ({
             {/* Image Section */}
             <div className='bg-[#2A2C39] md:w-1/2 w-full h-[450px] relative'>
                 <div className='overflow-hidden flex items-center justify-center h-full project-image relative'>
-                    <Image src={imageMain} alt={`${title} preview`} width={350} height={500} className='w-[350px] -rotate-45' />
+                    <Image src={imageMain} alt={`${title} preview`} loading={'lazy'} width={350} height={500} className='w-[350px] -rotate-45' />
                 </div>
                 <div className='overflow-hidden md:w-[450px] md:h-[380px] w-[250px] h-[415px] absolute bottom-0 left-1/2 -translate-x-1/2 opacity-100'>
-                    <Image src={imageOverlay} alt={`${title} full`} width={450} height={380} className='w-full' />
+                    <Image src={imageOverlay} alt={`${title} full`} loading={'lazy'} width={450} height={380} className='w-full' />
                 </div>
             </div>
 
