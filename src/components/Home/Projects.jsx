@@ -12,7 +12,9 @@ import { playfair } from '../fonts/Disney';
 import montserrat from '../fonts/Monserrat';
 import echo_mall from '@/../public/FireShot/FireShot Capture 003 - EchoMall - [echo-mall.web.app].png';
 import afs_foiling from '../../../public/FireShot/FireShot Capture 006 - The foiling spirit since 2009 - AFS - [afs-foiling.com].png'
-
+import afs_games from '../../../public/FireShot/FireShot Capture 004 - Afs Games - [games.afs-foiling.com].png'
+import bistro_boss from '../../../public/FireShot/FireShot Capture 009 - Bistro Boss - [bistro-boss-final-ea0a9.web.app].png'
+import uicc from '../../../public/FireShot/FireShot Capture 008 - UICC – Uttara International Language Institute - [uicc.infinityfreeapp.com].png'
 
 const ProjectCard = ({
     title,
@@ -28,10 +30,10 @@ const ProjectCard = ({
             {/* Image Section */}
             <div className='bg-[#2A2C39] md:w-1/2 w-full h-[450px] relative'>
                 <div className='overflow-hidden flex items-center justify-center h-full project-image relative'>
-                    <Image src={imageMain} alt={`${title} preview`} className='w-[350px] -rotate-45' />
+                    <Image src={imageMain} alt={`${title} preview`} width={350} height={500} className='w-[350px] -rotate-45' />
                 </div>
                 <div className='overflow-hidden w-[450px] h-[380px] absolute bottom-0 left-1/2 -translate-x-1/2 opacity-100'>
-                    <Image src={imageOverlay} alt={`${title} full`} className='w-full' />
+                    <Image src={imageOverlay} alt={`${title} full`} width={450} height={380} className='w-full' />
                 </div>
             </div>
 
@@ -122,7 +124,7 @@ const Projects = () => {
                                 'Next JS (React JS)',
                                 'Express JS (Node JS)',
                                 'Firebase',
-                                'MongoDB (Database)'
+                                'MongoDB (Database) and Stripe (Payment Gateway)'
                             ]}
                         />
                     </SwiperSlide>
@@ -139,43 +141,73 @@ const Projects = () => {
                                 'Next JS (React JS)',
                                 'Express JS (Node JS)',
                                 'Firebase',
+                                'MongoDB (Database) and Stripe (Payment Gateway)'
+                            ]}
+                        />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <ProjectCard
+                            title="AfS Foiling"
+                            description="AfS Foiling is a responsive e-commerce website built with WordPress and WooCommerce, offering a smooth shopping experience with secure checkout and easy product management."
+                            imageMain={afs_foiling}
+                            imageOverlay={afs_foiling}
+                            fonts={{ playfair, montserrat }}
+                            liveLink={'https://afs-foiling.com/'}
+                            technologies={[
+                                'WordPress',
+                                'WooCommerce',
+                                'PHP',
+                                'HTML/CSS',
+                                'JavaScript',
+                                'MySQL'
+                            ]}
+                        />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <ProjectCard
+                            title="AfS Games"
+                            description="AfS Games is a modern game point dashboard built with Next.js, offering a fast and responsive user interface for tracking and managing game points. Designed for scalability and performance, it provides users with an intuitive experience and real-time updates."
+                            imageMain={afs_games}
+                            imageOverlay={afs_games}
+                            fonts={{ playfair, montserrat }}
+                            liveLink={'https://games.afs-foiling.com/'}
+                            technologies={[
+                                'HTML/CSS (Tailwind CSS)',
+                                'Next JS (React JS)',
+                                'Express JS (Node JS)',
+                                'Firebase',
                                 'MongoDB (Database)'
                             ]}
                         />
                     </SwiperSlide>
                     <SwiperSlide>
                         <ProjectCard
-                            title="AfS Foiling"
-                            description="AfS Foiling is a responsive e-commerce website built with WordPress and WooCommerce, offering a smooth shopping experience with secure checkout and easy product management."
-                            imageMain={afs_foiling}
-                            imageOverlay={afs_foiling}
+                            title="Bistro Boss"
+                            description="Bistro Boss is a full-stack restaurant app with online ordering, Stripe payments, and an admin dashboard for managing users, orders, and menus."
+                            imageMain={bistro_boss}
+                            imageOverlay={bistro_boss}
                             fonts={{ playfair, montserrat }}
-                            liveLink={'https://afs-foiling.com/'}
+                            liveLink={'https://bistro-boss-final-ea0a9.web.app/'}
                             technologies={[
-                                'WordPress',
-                                'WooCommerce',
-                                'PHP',
-                                'HTML/CSS',
-                                'JavaScript',
-                                'MySQL'
+                                'HTML/CSS (Tailwind CSS)',
+                                'Next JS (React JS)',
+                                'Express JS (Node JS)',
+                                'Firebase',
+                                'MongoDB (Database) and Stripe (Payment Gateway)'
                             ]}
                         />
                     </SwiperSlide>
                     <SwiperSlide>
                         <ProjectCard
-                            title="AfS Foiling"
-                            description="AfS Foiling is a responsive e-commerce website built with WordPress and WooCommerce, offering a smooth shopping experience with secure checkout and easy product management."
-                            imageMain={afs_foiling}
-                            imageOverlay={afs_foiling}
+                            title="UICC (Student Agency)"
+                            description="UICC is a landing page for a student agency, showcasing services and testimonials with a modern design and responsive layout."
+                            imageMain={uicc}
+                            imageOverlay={uicc}
                             fonts={{ playfair, montserrat }}
-                            liveLink={'https://afs-foiling.com/'}
                             technologies={[
-                                'WordPress',
-                                'WooCommerce',
-                                'PHP',
+                                'Wordpress',
                                 'HTML/CSS',
                                 'JavaScript',
-                                'MySQL'
                             ]}
                         />
                     </SwiperSlide>
