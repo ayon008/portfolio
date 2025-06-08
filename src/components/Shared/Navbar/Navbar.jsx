@@ -36,12 +36,14 @@ const Navbar = () => {
                     <Link className='text-base font-medium text-[#798792] hover:text-white transition-all duration-300' href={'#contact'}>Contact</Link>
                 </div>
                 <div className='2xl:block xl:block hidden'>
-                    <Button className="border border-[#3A3C48] bg-[#252734] hover:bg-[#2A2C39] transition-all duration-300 hover:border-[#2A2C39] py-7 rounded-4xl text-lg cursor-pointer">
-                        <span className='flex items-center gap-2 px-6'>
-                            <Link href={'#hire-me'} className={`${playfair.className}`}>Hire me</Link>
-                            <ChevronsRight className="w-5 h-5 mt-1" />
-                        </span>
-                    </Button>
+                    <Link href={'#hire-me'}>
+                        <Button className="border border-[#3A3C48] bg-[#252734] hover:bg-[#2A2C39] transition-all duration-300 hover:border-[#2A2C39] py-7 rounded-4xl text-lg cursor-pointer">
+                            <span className='flex items-center gap-2 px-6'>
+                                <Link href={'#hire-me'} className={`${playfair.className}`}>Hire me</Link>
+                                <ChevronsRight className="w-5 h-5 mt-1" />
+                            </span>
+                        </Button>
+                    </Link>
                 </div>
                 <div className='2xl:hidden xl:hidden block'>
                     <Sheet>

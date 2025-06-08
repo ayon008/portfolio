@@ -8,6 +8,7 @@ import { FaLinkedinIn } from "@react-icons/all-files/fa/FaLinkedinIn";
 import { FaWhatsapp } from '@react-icons/all-files/fa/FaWhatsapp';
 import { Download, Mail } from 'lucide-react';
 import { playfair } from '../fonts/Disney';
+import Link from 'next/link';
 const Banner = () => {
     return (
         <div className='relative w-full'>
@@ -92,11 +93,13 @@ const Banner = () => {
                             <h2 className={`text-xl text-white mb-2 ${montserrat.className}`}>Shariar Ayon</h2>
                             <p className={`text-white text-sm mb-4 ${montserrat.className}`}>Full stack and wordpress developer with 3+ experience</p>
                             <div className="flex space-x-3">
-                                <Button className="border border-[#3A3C48] bg-[#252734] hover:bg-[#2A2C39] transition-all duration-300 hover:border-[#2A2C39] p-3 rounded-4xl text-sm cursor-pointer">
-                                    <span className='flex items-center gap-2 px-6'>
-                                        <span className={`${playfair.className}`}>Hire Me</span>
-                                    </span>
-                                </Button>
+                                <Link href={'#hire-me'}>
+                                    <Button className="border border-[#3A3C48] bg-[#252734] hover:bg-[#2A2C39] transition-all duration-300 hover:border-[#2A2C39] p-3 rounded-4xl text-sm cursor-pointer">
+                                        <span className='flex items-center gap-2 px-6'>
+                                            <span className={`${playfair.className}`}>Hire Me</span>
+                                        </span>
+                                    </Button>
+                                </Link>
                             </div>
                         </div>
                     </div>
