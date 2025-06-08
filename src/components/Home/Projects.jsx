@@ -15,6 +15,9 @@ import afs_foiling from '../../../public/FireShot/FireShot Capture 006 - The foi
 import afs_games from '../../../public/FireShot/FireShot Capture 004 - Afs Games - [games.afs-foiling.com].png'
 import bistro_boss from '../../../public/FireShot/FireShot Capture 009 - Bistro Boss - [bistro-boss-final-ea0a9.web.app].png'
 import uicc from '../../../public/FireShot/FireShot Capture 008 - UICC – Uttara International Language Institute - [uicc.infinityfreeapp.com].png'
+import e_store from '../../../public/FireShot/FireShot Capture 010 - My Blog – My WordPress Blog - [e-store.free.nf].png'
+import digital_agency from '../../../public/FireShot/FireShot Capture 013 - My Blog – My WordPress Blog - [digital-agency.ct.ws].png'
+import seek_com from '../../../public/FireShot/FireShot Capture 014 - Create Next App - [seek-com.vercel.app].png'
 
 const ProjectCard = ({
     title,
@@ -208,6 +211,55 @@ const Projects = () => {
                                 'Wordpress',
                                 'HTML/CSS',
                                 'JavaScript',
+                            ]}
+                        />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <ProjectCard
+                            title="E-store (E-commerce)"
+                            description="E-store is a wordpress-based e-commerce website featuring a modern design, product listings, and a user-friendly shopping experience."
+                            liveLink={'https://e-store.free.nf/'}
+                            imageMain={e_store}
+                            imageOverlay={e_store}
+                            fonts={{ playfair, montserrat }}
+                            technologies={[
+                                'Wordpress',
+                                'HTML/CSS',
+                                'JavaScript',
+                                'WooCommerce',
+                                'PHP',
+                            ]}
+                        />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <ProjectCard
+                            title="Digital Agency"
+                            description="Digital Agency is a WordPress-based website designed for a digital agency, showcasing services, portfolio, and client testimonials with a modern and responsive layout."
+                            liveLink={'http://digital-agency.ct.ws'}
+                            imageMain={digital_agency}
+                            imageOverlay={digital_agency}
+                            fonts={{ playfair, montserrat }}
+                            technologies={[
+                                'Wordpress',
+                                'HTML/CSS',
+                                'JavaScript',
+                                'WooCommerce',
+                                'PHP',
+                            ]}
+                        />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <ProjectCard
+                            title="Landing Page like (seek.com)"
+                            description="It is a replica of the landing page of seek.com, showcasing a modern design and responsive layout."
+                            liveLink={'https://seek-com.vercel.app/'}
+                            imageMain={seek_com}
+                            imageOverlay={seek_com}
+                            fonts={{ playfair, montserrat }}
+                            technologies={[
+                                'HTML/CSS (Tailwind CSS)',
+                                'Next JS (React JS)',
+                                'Express JS (Node JS)',
                             ]}
                         />
                     </SwiperSlide>
