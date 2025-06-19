@@ -19,6 +19,7 @@ import e_store from '@/../public/FireShot/FireShot Capture 010 - My Blog – My 
 import digital_agency from '@/../public/FireShot/FireShot Capture 013 - My Blog – My WordPress Blog - [digital-agency.ct.ws].png'
 import seek_com from '@/../public/FireShot/FireShot Capture 014 - Create Next App - [seek-com.vercel.app].png'
 import Link from 'next/link';
+import { Autoplay } from 'swiper/modules';
 
 const ProjectCard = ({
     title,
@@ -118,8 +119,12 @@ const Projects = () => {
                     <Swiper
                         ref={swiperRef}
                         slidesPerView={1}
+                        modules={[Autoplay]}
                         onSwiper={(swiper) => (swiperRef.current = swiper)}
                         loop={true}
+                        autoplay={{
+                            delay: 2500,
+                        }}
                     >
                         <SwiperSlide>
                             <ProjectCard
